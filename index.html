@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a1cefdd82a63efffdb6b61b635dc8e12 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a1cefdd82a63efffdb6b61b635dc8e12" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a1cefdd82a63efffdb6b61b635dc8e12 = L.map(
+                "map_a1cefdd82a63efffdb6b61b635dc8e12",
+                {
+                    center: [10.0, -60.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3002950636df1414f88177f014b7ce7c = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v11/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibHVjZWx5czMwIiwiYSI6ImNtNmd0YzR2azA0a20ybG83Z3MxcWtqMWEifQ.dgcq1XO_hJ54Fr9mxjblQA",
+                {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var marker_60fbbf98be03f5222ba61d5be478a235 = L.marker(
+                [4.1413, -56.0771],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_97a8a2efbbb6c1a72badeec7350a36d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_60fbbf98be03f5222ba61d5be478a235.setIcon(icon_97a8a2efbbb6c1a72badeec7350a36d4);
+        
+    
+        var popup_6c197234bed41c3e1895616a5d3d44e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39f4ba89f703fa3757694da829ded491 = $(`<div id="html_39f4ba89f703fa3757694da829ded491" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Surinam</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Exploración de gas natural y energía renovable</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> En crecimiento</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_6c197234bed41c3e1895616a5d3d44e5.setContent(html_39f4ba89f703fa3757694da829ded491);
+        
+
+        marker_60fbbf98be03f5222ba61d5be478a235.bindPopup(popup_6c197234bed41c3e1895616a5d3d44e5)
+        ;
+
+        
+    
+    
+            marker_60fbbf98be03f5222ba61d5be478a235.bindTooltip(
+                `<div>
+                     🚀 Surinam
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_330fe4d244bc93e3ec1881cfb366462c = L.marker(
+                [4.8604, -58.9302],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_6ca00110d8c4567444af89464e61cfd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_330fe4d244bc93e3ec1881cfb366462c.setIcon(icon_6ca00110d8c4567444af89464e61cfd1);
+        
+    
+        var popup_5267b50e908c4268fc06c601b6243ff8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e38172ec4b51f7b3735f8209e8056971 = $(`<div id="html_e38172ec4b51f7b3735f8209e8056971" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Guyana Inglesa</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Proyectos de energía solar y almacenamiento BESS</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Expansión activa</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_5267b50e908c4268fc06c601b6243ff8.setContent(html_e38172ec4b51f7b3735f8209e8056971);
+        
+
+        marker_330fe4d244bc93e3ec1881cfb366462c.bindPopup(popup_5267b50e908c4268fc06c601b6243ff8)
+        ;
+
+        
+    
+    
+            marker_330fe4d244bc93e3ec1881cfb366462c.bindTooltip(
+                `<div>
+                     🚀 Guyana Inglesa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89ffe604b7941ae4a63ea4e7439503e0 = L.marker(
+                [3.9339, -53.1258],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_dfceb967a10014f70cb4635453c85937 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_89ffe604b7941ae4a63ea4e7439503e0.setIcon(icon_dfceb967a10014f70cb4635453c85937);
+        
+    
+        var popup_18ec8a7f10c1aea6f235ce94011665fa = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bd499f690943e8d8b60d98214d4ad4ca = $(`<div id="html_bd499f690943e8d8b60d98214d4ad4ca" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Guyana Francesa</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Infraestructura energética en desarrollo</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Potencial alto</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_18ec8a7f10c1aea6f235ce94011665fa.setContent(html_bd499f690943e8d8b60d98214d4ad4ca);
+        
+
+        marker_89ffe604b7941ae4a63ea4e7439503e0.bindPopup(popup_18ec8a7f10c1aea6f235ce94011665fa)
+        ;
+
+        
+    
+    
+            marker_89ffe604b7941ae4a63ea4e7439503e0.bindTooltip(
+                `<div>
+                     🚀 Guyana Francesa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70e3f3c75c81202424d646c464f2413e = L.marker(
+                [13.1939, -59.5432],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_4d387e72885ade0a2de5b939610cf1ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_70e3f3c75c81202424d646c464f2413e.setIcon(icon_4d387e72885ade0a2de5b939610cf1ce);
+        
+    
+        var popup_8789b661fdc28e49fd55666e7b168ee6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_71c7610313c32f8bd7e4ede0b1d884d4 = $(`<div id="html_71c7610313c32f8bd7e4ede0b1d884d4" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Barbados</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Iniciativas de transición energética</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Oportunidad emergente</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_8789b661fdc28e49fd55666e7b168ee6.setContent(html_71c7610313c32f8bd7e4ede0b1d884d4);
+        
+
+        marker_70e3f3c75c81202424d646c464f2413e.bindPopup(popup_8789b661fdc28e49fd55666e7b168ee6)
+        ;
+
+        
+    
+    
+            marker_70e3f3c75c81202424d646c464f2413e.bindTooltip(
+                `<div>
+                     🚀 Barbados
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f48246ff3d3a48c90d87ea687962ece = L.marker(
+                [23.8859, 45.0792],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_9e10f2e9b4d4af8a03cc6bce2902e2c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_0f48246ff3d3a48c90d87ea687962ece.setIcon(icon_9e10f2e9b4d4af8a03cc6bce2902e2c6);
+        
+    
+        var popup_d9e5d13d9b55d99eb321b62fb6882556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_577d56d1780e0282e15d2c3508c2f01f = $(`<div id="html_577d56d1780e0282e15d2c3508c2f01f" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Arabia Saudita</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Proyectos de gas a hidrógeno</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Inversión en desarrollo</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_d9e5d13d9b55d99eb321b62fb6882556.setContent(html_577d56d1780e0282e15d2c3508c2f01f);
+        
+
+        marker_0f48246ff3d3a48c90d87ea687962ece.bindPopup(popup_d9e5d13d9b55d99eb321b62fb6882556)
+        ;
+
+        
+    
+    
+            marker_0f48246ff3d3a48c90d87ea687962ece.bindTooltip(
+                `<div>
+                     🚀 Arabia Saudita
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e05f138d88c4e1cf1e4bdbbd52f749e = L.marker(
+                [12.5211, -69.9683],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_3a94f043273ca9439be6fb2643b963dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_9e05f138d88c4e1cf1e4bdbbd52f749e.setIcon(icon_3a94f043273ca9439be6fb2643b963dd);
+        
+    
+        var popup_34623a97a7c8c2c309cc67a1181100c7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c68511e9bddfa2ebe1435c070d3c645 = $(`<div id="html_0c68511e9bddfa2ebe1435c070d3c645" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Aruba</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Turismo y eficiencia energética</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Sector estable</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_34623a97a7c8c2c309cc67a1181100c7.setContent(html_0c68511e9bddfa2ebe1435c070d3c645);
+        
+
+        marker_9e05f138d88c4e1cf1e4bdbbd52f749e.bindPopup(popup_34623a97a7c8c2c309cc67a1181100c7)
+        ;
+
+        
+    
+    
+            marker_9e05f138d88c4e1cf1e4bdbbd52f749e.bindTooltip(
+                `<div>
+                     🚀 Aruba
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5f1a5e33b7227052d294f960aad0175 = L.marker(
+                [12.2019, -68.2624],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_3f4466bdf03f48fa2a718750fd7e031d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b5f1a5e33b7227052d294f960aad0175.setIcon(icon_3f4466bdf03f48fa2a718750fd7e031d);
+        
+    
+        var popup_4b2e63507592ec14c31d0f4b91862664 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e574e92ebd1e1651804be119a613fda3 = $(`<div id="html_e574e92ebd1e1651804be119a613fda3" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Bonaire</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Desarrollo de energías limpias</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Interés creciente</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_4b2e63507592ec14c31d0f4b91862664.setContent(html_e574e92ebd1e1651804be119a613fda3);
+        
+
+        marker_b5f1a5e33b7227052d294f960aad0175.bindPopup(popup_4b2e63507592ec14c31d0f4b91862664)
+        ;
+
+        
+    
+    
+            marker_b5f1a5e33b7227052d294f960aad0175.bindTooltip(
+                `<div>
+                     🚀 Bonaire
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a3c0f46efb881dbdd5af155f9b97f74 = L.marker(
+                [12.1696, -68.99],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_bd689da1dd5324936f1b85b605e803bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_6a3c0f46efb881dbdd5af155f9b97f74.setIcon(icon_bd689da1dd5324936f1b85b605e803bb);
+        
+    
+        var popup_712806f9ca3652d68e432ee9c64da096 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_296d232eed4084eb94a6a4a1a5a39b84 = $(`<div id="html_296d232eed4084eb94a6a4a1a5a39b84" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Curazao</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Innovación en infraestructura energética</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Desarrollo inicial</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_712806f9ca3652d68e432ee9c64da096.setContent(html_296d232eed4084eb94a6a4a1a5a39b84);
+        
+
+        marker_6a3c0f46efb881dbdd5af155f9b97f74.bindPopup(popup_712806f9ca3652d68e432ee9c64da096)
+        ;
+
+        
+    
+    
+            marker_6a3c0f46efb881dbdd5af155f9b97f74.bindTooltip(
+                `<div>
+                     🚀 Curazao
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6ac5b7e6a3d9b6a1cccd51a773f014a = L.marker(
+                [18.7357, -70.1627],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_78b49a5ac220a97b353742f3affb8880 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_b6ac5b7e6a3d9b6a1cccd51a773f014a.setIcon(icon_78b49a5ac220a97b353742f3affb8880);
+        
+    
+        var popup_1caede350dfa9caa8b9327e9d76ace39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2ae42e64e51d8c053a6046d5ba3fc39a = $(`<div id="html_2ae42e64e51d8c053a6046d5ba3fc39a" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>República Dominicana</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Interconexión eléctrica y almacenamiento</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Mercado consolidado</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_1caede350dfa9caa8b9327e9d76ace39.setContent(html_2ae42e64e51d8c053a6046d5ba3fc39a);
+        
+
+        marker_b6ac5b7e6a3d9b6a1cccd51a773f014a.bindPopup(popup_1caede350dfa9caa8b9327e9d76ace39)
+        ;
+
+        
+    
+    
+            marker_b6ac5b7e6a3d9b6a1cccd51a773f014a.bindTooltip(
+                `<div>
+                     🚀 República Dominicana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_15d6555f339f5324a3f356b36f5a8807 = L.marker(
+                [18.2208, -66.5901],
+                {}
+            ).addTo(map_a1cefdd82a63efffdb6b61b635dc8e12);
+        
+    
+            var icon_88137edb69ecd53f6f733e9a43793d66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkblue", "prefix": "glyphicon"}
+            );
+            marker_15d6555f339f5324a3f356b36f5a8807.setIcon(icon_88137edb69ecd53f6f733e9a43793d66);
+        
+    
+        var popup_868160687b73e48065c801ce07cc8fd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_53c454e0ad54c59cc8528e53a953e999 = $(`<div id="html_53c454e0ad54c59cc8528e53a953e999" style="width: 100.0%; height: 100.0%;">     <div style='font-size:16px; text-align:center; font-weight:bold; color:#0A3D62;'>Puerto Rico</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:13px;'><b style='color:#1E90FF;'>Oportunidades:</b> Energía renovable y eficiencia energética</div>     <div style='font-size:13px;'><b style='color:#32CD32;'>Estado:</b> Evolución constante</div>     <hr style='border: 1px solid #1E90FF;'>     <div style='font-size:12px; text-align:center; color:#555;'>📊 Información actualizada en tiempo real</div>     </div>`)[0];
+            popup_868160687b73e48065c801ce07cc8fd3.setContent(html_53c454e0ad54c59cc8528e53a953e999);
+        
+
+        marker_15d6555f339f5324a3f356b36f5a8807.bindPopup(popup_868160687b73e48065c801ce07cc8fd3)
+        ;
+
+        
+    
+    
+            marker_15d6555f339f5324a3f356b36f5a8807.bindTooltip(
+                `<div>
+                     🚀 Puerto Rico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
